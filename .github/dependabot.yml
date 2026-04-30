@@ -36,3 +36,8 @@ updates:
     labels:
       - "dependencies"
       - "docker"
+    ignore:
+      # Project pins Python 3.13 (pydantic-core/pyo3 do not support 3.14 yet);
+      # major bumps of the python base image must be coordinated manually.
+      - dependency-name: "python"
+        update-types: ["version-update:semver-major", "version-update:semver-minor"]

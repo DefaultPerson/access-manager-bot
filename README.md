@@ -1,8 +1,17 @@
 # Access Manager Bot
 
-Telegram bot for automated access control to private channels based on subscription policies.
+<p align="center">
+  <img src="assets/image.png" alt="Channels list view" width="500">
+</p>
 
-![Channels list view](assets/image.png)
+<p align="center">
+  <a href="https://github.com/DefaultPerson/access-manager-bot/actions/workflows/ci.yml"><img src="https://github.com/DefaultPerson/access-manager-bot/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/DefaultPerson/access-manager-bot?color=green" alt="License: MIT"></a>
+  <a href="https://www.python.org/downloads/"><img src="https://img.shields.io/badge/python-3.13+-blue.svg" alt="Python 3.13+"></a>
+  <a href="https://t.me/HMonitorsAccessBot"><img src="https://img.shields.io/badge/Telegram-@HMonitorsAccessBot-26A5E4?logo=telegram&logoColor=white" alt="Telegram"></a>
+</p>
+
+Telegram bot for automated access control to private channels based on subscription policies.
 
 ## Purpose
 

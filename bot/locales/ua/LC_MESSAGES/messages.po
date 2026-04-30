@@ -1,0 +1,568 @@
+# Ukrainian translations for Access Manager Bot
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+
+# Language selection
+msgid "language-selection"
+msgstr "Привіт! Оберіть вашу мову:"
+
+msgid "language-selected"
+msgstr "✅ Мову встановлено: Українська"
+
+msgid "language-changed"
+msgstr "Мову змінено на Українську"
+
+# Bot commands
+msgid "cmd-start-desc"
+msgstr "Розпочати роботу з ботом"
+
+msgid "cmd-channels-desc"
+msgstr "Переглянути доступні канали"
+
+msgid "cmd-language-desc"
+msgstr "Змінити мову"
+
+# Admin command descriptions
+msgid "cmd-admin-policies-desc"
+msgstr "Список всіх політик"
+
+msgid "cmd-admin-policy-create-desc"
+msgstr "Створити нову політику"
+
+msgid "cmd-admin-policy-view-desc"
+msgstr "Перегляд політики"
+
+msgid "cmd-admin-policy-add-required-desc"
+msgstr "Додати обов'язковий канал"
+
+msgid "cmd-admin-policy-add-working-desc"
+msgstr "Додати робочий канал"
+
+msgid "cmd-broadcast-desc"
+msgstr "Відправити розсилку"
+
+msgid "cmd-admin-channel-remove-desc"
+msgstr "Видалити канал з політики"
+
+msgid "cmd-admin-compliance-scan-desc"
+msgstr "Запустити перевірку відповідності"
+
+# Menu placeholder
+msgid "menu-placeholder"
+msgstr "Оберіть дію..."
+
+# Main menu
+msgid "menu-welcome"
+msgstr "Ласкаво просимо до Access Manager Bot!"
+
+msgid "menu-channels"
+msgstr "📋 Канали"
+
+msgid "menu-language"
+msgstr "⚙️ Мова"
+
+msgid "menu-support"
+msgstr "💬 Support"
+
+# Channel list
+msgid "channels-title"
+msgstr "<b>Список доступних каналів</b>"
+
+msgid "channels-instructions"
+msgstr "Щоб отримати доступ до каналів, надішліть запит на вступ, потім натисніть \"📋 Вимоги\" та підпишіться на необхідні канали.\n\nЯкщо бот не додав вас автоматично, натисніть \"✅Перевірити\"."
+
+msgid "channels-to-access"
+msgstr "<i>Для доступу до:</i> <b>{channel_name}</b>"
+
+msgid "channels-required"
+msgstr "Необхідні канали"
+
+msgid "channels-pagination-prev"
+msgstr "⟵ Назад"
+
+msgid "channels-pagination-next"
+msgstr "Вперед ⟶"
+
+msgid "channels-check-button"
+msgstr "✅ Перевірити"
+
+msgid "channels-reqs-button"
+msgstr "📋 Вимоги"
+
+# Join request
+msgid "join-checking"
+msgstr "Перевіряю ваш доступ до {channel_name}..."
+
+msgid "join-approved"
+msgstr "✅ Ви додані! Всі вимоги виконані. Ласкаво просимо до {channel_name}."
+
+msgid "join-denied"
+msgstr "❌ Запит відхилено. Вимоги не виконані."
+
+# Missing channels
+msgid "missing-channels-title"
+msgstr "📋 Відсутні підписки"
+
+msgid "missing-channels-message"
+msgstr "Для доступу до <b>{channel_name}</b> необхідно підписатися на необхідні канали.\n\nПісля підписки натисніть \"Перевірити\"."
+
+msgid "missing-channels-button"
+msgstr "🔁 Перевірити"
+
+# Grace period
+msgid "grace-started"
+msgstr "⏳ Нову вимогу додано"
+
+msgid "grace-message"
+msgstr "⏳ Для збереження доступу до <b>{channel_name}</b> підпішіться на необхідні канали протягом {grace_minutes} хв.\n\nПісля підписки натисніть \"Перевірити\"."
+
+msgid "grace-still-missing"
+msgstr "⚠️ Все ще відсутній: {missing_channels}\n\nПільговий період закінчується через {grace_remaining}"
+
+msgid "grace-resolved"
+msgstr "✅ Вимоги виконані. Доступ відновлено!"
+
+msgid "compliance-restored"
+msgstr "✅ Доступ до <b>{channel_name}</b> відновлено! Всі вимоги виконані."
+
+# Revocation
+msgid "revoked-title"
+msgstr "🚫 Доступ призупинено"
+
+msgid "revoked-message"
+msgstr "Доступ до <b>{channel_name}</b> призупинено через відсутність підписки на:\n\n {missing_channels}\n\nПідпишіться на необхідні канали та повторіть запит за допомогою /channels"
+
+msgid "admin-enter-policy-id"
+msgstr "📝 Введіть ідентифікатор політики (UUID):"
+
+msgid "admin-enter-channel-chat-id"
+msgstr "📝 Введіть Chat ID каналу (числовий):"
+
+msgid "admin-enter-channel-link-add"
+msgstr "📝 Введіть посилання на канал (наприклад, https://t.me/+inviteHash або https://t.me/username)\nАбо надішліть '-' щоб пропустити:"
+
+msgid "admin-enter-display-name"
+msgstr "📝 Введіть відображуване ім'я для цього каналу:"
+
+msgid "admin-channels-in-policy"
+msgstr "<b>Канали в {title}</b>"
+
+msgid "admin-required-channels"
+msgstr "<b>Обов'язкові канали:</b>"
+
+# Admin commands
+msgid "admin-policy-created"
+msgstr "✅ Політику створено для {channel_name}\n\nID політики: <code>{policy_id}</code>\n\nТепер додайте робочі та необхідні канали за допомогою команд:\n- <code>/policy_working_add {policy_id} <посилання_на_канал></code>\n- <code>/policy_required_add {policy_id} <посилання_на_канал></code>"
+
+msgid "admin-channel-added"
+msgstr "✅ Канал додано\n\nПолітика: {policy_id}\nКанал: {channel_name}\nТип: {kind}"
+
+msgid "admin-channel-removed"
+msgstr "✅ Канал видалено"
+
+msgid "admin-policy-list"
+msgstr "📋 <b>Список політик</b>\n\n{policies_list}"
+
+msgid "admin-no-policies"
+msgstr "Політик не знайдено"
+
+msgid "admin-bot-no-rights"
+msgstr "❌ Бот не має прав адміністратора в каналі {channel_id}"
+
+msgid "admin-error"
+msgstr "❌ Помилка: {error}"
+
+# Broadcast
+msgid "broadcast-prompt"
+msgstr "📢 Введіть повідомлення для розсилки:"
+
+msgid "broadcast-queued"
+msgstr "✅ Розсилку додано до черги. Ви отримаєте зведення після завершення доставки."
+
+msgid "broadcast-completed"
+msgstr "✅ Розсилку завершено\n\nДоставлено: {delivered}\nПомилок: {failed}"
+
+# Status
+msgid "status-title"
+msgstr "📊 <b>Ваш статус</b>"
+
+msgid "status-active"
+msgstr "✅ Активний"
+
+msgid "status-grace"
+msgstr "⏳ Пільговий період"
+
+msgid "status-revoked"
+msgstr "🚫 Доступ призупинено"
+
+msgid "status-needs-review"
+msgstr "📋 Потребує перевірки"
+
+msgid "status-details"
+msgstr "Політика: {policy_name}\nСтатус: {status}\nОстання перевірка: {last_checked}"
+
+# Help
+msgid "help-title"
+msgstr "❓ <b>Довідка</b>"
+
+# Errors
+msgid "error-general"
+msgstr "⚠️ Сталася помилка. Спробуйте пізніше."
+
+msgid "error-not-found"
+msgstr "❌ Не знайдено"
+
+msgid "error-permission-denied"
+msgstr "❌ Доступ заборонено"
+
+msgid "error-invalid-command"
+msgstr "❌ Невірна команда"
+
+# Admin buttons
+msgid "admin-btn-add-required"
+msgstr "➕ Додати обов'язковий"
+
+msgid "admin-btn-add-working"
+msgstr "➕ Додати робочий"
+
+msgid "admin-btn-list-channels"
+msgstr "📋 Список каналів"
+
+msgid "admin-btn-deactivate"
+msgstr "🗑️ Деактивувати"
+
+msgid "admin-btn-back-to-list"
+msgstr "⬅️ До списку"
+
+msgid "admin-btn-confirm"
+msgstr "✅ Підтвердити"
+
+msgid "admin-btn-cancel"
+msgstr "❌ Скасувати"
+
+msgid "admin-btn-remove-channel"
+msgstr "🗑️ Видалити канал"
+
+msgid "admin-btn-back"
+msgstr "⬅️ Назад"
+
+msgid "admin-btn-remove-protected"
+msgstr "🗑️ Прибрати захищений канал"
+
+msgid "confirm-button"
+msgstr "🔁 Підтвердити"
+
+msgid "ok-button"
+msgstr "OK"
+
+# Newsletter/Broadcast system
+msgid "nl-btn-add"
+msgstr "Додати"
+
+msgid "nl-btn-delete"
+msgstr "Видалити"
+
+msgid "nl-btn-back"
+msgstr "Назад"
+
+msgid "nl-btn-skip"
+msgstr "Пропустити"
+
+msgid "nl-btn-next"
+msgstr "Далі"
+
+msgid "nl-btn-later"
+msgstr "Пізніше"
+
+msgid "nl-btn-now"
+msgstr "Зараз"
+
+msgid "nl-btn-confirm"
+msgstr "Підтвердити"
+
+msgid "nl-outdated-text"
+msgstr "..."
+
+msgid "nl-newsletters"
+msgstr ""
+"Меню розсилки\n"
+"\n"
+"<b>Додати</b> - додати/запустити відкладену розсилку\n"
+"\n"
+"• Всього користувачів: <b>{total}</b>\n"
+"\n"
+"Список відкладених розсилок:"
+
+msgid "nl-newsletter"
+msgstr ""
+"Повідомлення вище - приклад відкладеного повідомлення.\n"
+"\n"
+"<b>Видалити</b> - видалити відкладене повідомлення\n"
+"\n"
+"Виберіть дію:"
+
+msgid "nl-newsletter-delete"
+msgstr "Підтвердити видалення відкладеного повідомлення?"
+
+msgid "nl-send-message"
+msgstr "Будь ласка, надішліть або перешліть ваше повідомлення:"
+
+msgid "nl-send-buttons"
+msgstr ""
+"Будь ласка, надайте кнопки для закріплення до повідомлення.\n"
+"Якщо ви не хочете закріплювати, натисніть пропустити.\n"
+"\n"
+"Надішліть текст кнопок та посилань у форматі:\n"
+"<code>Текст кнопки | посилання</code>\n"
+"Приклад:\n"
+"<code>Текст | https://example.com</code>\n"
+"\n"
+"Щоб додати кілька кнопок в один ряд, розділіть посилання комами.\n"
+"Приклад:\n"
+"<code>Перший текст | https://example.com, Другий текст | https://example.com</code>\n"
+"\n"
+"Щоб додати кілька кнопок в колонку, напишіть нові посилання на нових рядках.\n"
+"Приклад:\n"
+"<code>Перший текст | https://example.com\n"
+"Другий текст | https://example.com</code>"
+
+msgid "nl-send-buttons-error"
+msgstr ""
+"Сталася помилка при обробці наданої інформації про кнопки. "
+"Будь ласка, переконайтеся, що кожна кнопка відформатована правильно:\n"
+"<code>Текст кнопки | посилання</code>\n"
+"Приклад:\n"
+"<code>Текст | https://example.com</code>\n"
+"\n"
+"Якщо виникли проблеми, перевірте наявність помилок, відсутність посилань або неправильне форматування."
+
+msgid "nl-message-preview"
+msgstr ""
+"Повідомлення вище - приклад відкладеного повідомлення.\n"
+"\n"
+"<b>Далі</b> - продовжити налаштування\n"
+"\n"
+"Виберіть дію:"
+
+msgid "nl-choose-options"
+msgstr ""
+"Виберіть дію:\n"
+"\n"
+"<b>Зараз</b> - запустити розсилку\n"
+"<b>Пізніше</b> - відкласти розсилку"
+
+msgid "nl-confirmation-now"
+msgstr "Ви впевнені, що хочете підтвердити та запустити розсилку?"
+
+msgid "nl-send-datetime"
+msgstr ""
+"Надішліть дату та час для запуску розсилки у форматі:\n"
+"<code>YYYY-MM-DD HH:MM</code>\n"
+"Приклад:\n"
+"<code>{datetime_string}</code>"
+
+msgid "nl-send-datetime-error"
+msgstr ""
+"Сталася помилка при обробці наданої дати та часу. "
+"Будь ласка, переконайтеся, що формат правильний:\n"
+"<code>YYYY-MM-DD HH:MM</code>\n"
+"Приклад:\n"
+"<code>{datetime_string}</code>"
+
+msgid "nl-confirmation-later"
+msgstr "Ви впевнені, що хочете підтвердити та відкласти розсилку?"
+
+msgid "nl-newsletter-started"
+msgstr "Розсилку запущено. Будь ласка, дочекайтеся повідомлення про завершення."
+
+msgid "nl-newsletter-ended"
+msgstr ""
+"Розсилку успішно завершено для загальної кількості користувачів: {total}.\n"
+"\n"
+"Успішні: <b>{successful}</b> • Неуспішні: <b>{unsuccessful}</b>"
+
+# Admin policy messages
+msgid "admin-btn-reactivate"
+msgstr "✅ Реактивувати політику"
+
+msgid "admin-policies-not-found"
+msgstr "📋 Політики не знайдено"
+
+msgid "admin-policies-title"
+msgstr "<b>📋 Політики доступу (Останні 10)</b>"
+
+
+msgid "admin-usage-policy-view"
+msgstr "❌ Використання: /admin_policy_view &lt;policy_id&gt;"
+
+msgid "admin-invalid-uuid"
+msgstr "❌ Невірний формат UUID"
+
+msgid "admin-policy-not-found"
+msgstr "❌ Політику не знайдено"
+
+msgid "admin-policy-details"
+msgstr "<b>Політика: {title}</b>\n\nID: <code>{id}</code>\nСтатус: {status}\nChat ID: <code>{chat_id}</code>"
+
+msgid "admin-status-active"
+msgstr "✅ Активна"
+
+msgid "admin-status-inactive"
+msgstr "❌ Неактивна"
+
+msgid "admin-enter-chat-id"
+msgstr "📝 Введіть захищений chat ID (числовий):"
+
+msgid "admin-invalid-input"
+msgstr "❌ Невірний ввід"
+
+msgid "admin-chat-id-numeric"
+msgstr "❌ Chat ID має бути числом (наприклад, -1002931287222)"
+
+msgid "admin-enter-channel-link"
+msgstr "📝 Введіть посилання на захищений канал (наприклад, https://t.me/+inviteHash або https://t.me/username)\nАбо надішліть '-' щоб пропустити:"
+
+msgid "admin-enter-title"
+msgstr "📝 Введіть назву політики:"
+
+msgid "admin-usage-reactivate"
+msgstr "❌ Використання: /admin_policy_reactivate &lt;policy_id&gt;"
+
+msgid "admin-policy-deactivated"
+msgstr "✅ Політику деактивовано: <b>{title}</b>"
+
+msgid "admin-policy-reactivated"
+msgstr "✅ Політику реактивовано: <b>{title}</b>"
+
+msgid "admin-protected-removed"
+msgstr "✅ Захищений канал видалено з політики <b>{title}</b>. Політику деактивовано."
+
+msgid "admin-kind-required"
+msgstr "обов'язковий"
+
+msgid "admin-kind-working"
+msgstr "робочий"
+
+msgid "admin-callback-error"
+msgstr "❌ Помилка"
+
+msgid "admin-invalid-policy-id"
+msgstr "❌ Невірний ID політики"
+
+msgid "admin-no-channels"
+msgstr "Немає каналів в цій політиці"
+
+msgid "admin-working-channels"
+msgstr "<b>Робочі канали:</b>"
+
+msgid "admin-label-chat-id"
+msgstr "Chat ID"
+
+msgid "admin-label-revision"
+msgstr "Ревізія"
+
+msgid "admin-send-skip"
+msgstr "Надішліть '-' щоб пропустити"
+
+msgid "admin-working-channels-deprecated"
+msgstr "❌ Додавання робочих каналів більше не підтримується."
+
+msgid "broadcast-system-unavailable"
+msgstr "❌ Система розсилки недоступна.\nПереконайтеся, що AiogramNewsletterMiddleware зареєстровано."
+
+msgid "broadcast-no-users"
+msgstr "⚠️ Користувачі не знайдені в базі даних"
+
+msgid "admin-remove-cmd"
+msgstr "Видалити"
+
+msgid "admin-usage-channel-remove"
+msgstr "❌ Використання: /admin_channel_remove &lt;channel_uuid&gt;"
+
+msgid "admin-btn-edit-link"
+msgstr "🔗 Змінити посилання каналу"
+
+msgid "admin-enter-new-link"
+msgstr "📝 Введіть нове посилання на захищений канал.\n\nПоточне посилання: <code>{current_link}</code>\n\nНадішліть нове посилання (наприклад, https://t.me/+inviteHash або https://t.me/username):"
+
+msgid "join-approved-plain"
+msgstr "✅ Ви додані! Всі вимоги виконані. Ласкаво просимо до {channel_name}."
+
+msgid "missing-channels-message-plain"
+msgstr "Для доступу до {channel_name} необхідно підписатися на необхідні канали.\n\nПісля підписки натисніть \"Перевірити\"."
+
+msgid "menu-back-button"
+msgstr "⬅️ Назад в меню"
+
+msgid "compliant-send-request"
+msgstr " ✅ Ви виконали всі вимоги!\n\nТепер надішліть заявку на приєднання до {channel_name}"
+
+msgid "new-channel-added-notification"
+msgstr "⏳ Новий обов'язковий канал додано до політики <b>{policy_name}</b>: <b>{channel_name}</b>.\n\nБудь ласка, підпішіться протягом {grace_minutes} хв. для збереження доступу.\n\nПісля підписки натисніть \"Підтвердити\"."
+
+# Admin users commands
+msgid "cmd-admin-users-desc"
+msgstr "Список всіх користувачів"
+
+msgid "admin-users-title"
+msgstr "📋 Список користувачів"
+
+msgid "admin-users-page-info"
+msgstr "Сторінка {page} з {total_pages} | Всього користувачів: {total}"
+
+msgid "admin-users-no-users"
+msgstr "❌ Користувачів не знайдено"
+
+# Admin user sync command
+msgid "cmd-admin-user-sync-desc"
+msgstr "Актуалізувати участь користувача"
+
+msgid "admin-user-sync-usage"
+msgstr "❌ Використання: /admin_user_sync &lt;user_id&gt;"
+
+msgid "admin-user-sync-invalid-id"
+msgstr "❌ Невірний формат user_id"
+
+msgid "admin-user-sync-user-not-found"
+msgstr "❌ Користувача не знайдено в базі даних"
+
+msgid "admin-user-sync-progress"
+msgstr "🔄 Актуалізація участі для користувача {user_id}..."
+
+msgid "admin-user-sync-complete"
+msgstr "✅ Синхронізацію завершено!\n\nПеревірено каналів: {checked}\nПомилок: {errors}\nОновлено грантів: {updated}\n\n💡 Запустіть /admin_compliance_scan для перевірки."
+
+# Admin command responses (extracted from hardcoded strings)
+msgid "admin-policy-created-details"
+msgstr "✅ Політику створено!\n\nID: <code>{id}</code>\nНазва: <b>{title}</b>\nChat ID: <code>{chat_id}</code>"
+
+msgid "admin-channel-removed-details"
+msgstr "✅ Канал видалено!\n\nID: <code>{id}</code>\nНазва: <b>{name}</b>\nPolicy ID: <code>{policy_id}</code>"
+
+msgid "admin-policy-reactivated-details"
+msgstr "✅ Політику реактивовано!\n\nID: <code>{id}</code>\nНазва: <b>{title}</b>"
+
+msgid "admin-channel-link-updated"
+msgstr "✅ Посилання каналу оновлено!\n\nБуло: <code>{old_link}</code>\nСтало: <code>{new_link}</code>"
+
+msgid "admin-users-notified-suffix"
+msgstr "\n\n📤 Сповіщено користувачів: {notified}/{affected}"
+
+msgid "admin-compliance-scan-started"
+msgstr "⏳ Запуск перевірки відповідності..."
+
+msgid "admin-compliance-scan-completed"
+msgstr "✅ Перевірку відповідності завершено. Деталі у логах."
+
+msgid "admin-compliance-scan-failed"
+msgstr "❌ Помилка під час перевірки: {error}"
+
+msgid "grace-fallback-missing-channels"
+msgstr "відсутні канали"
+
+msgid "nl-send-buttons-error"
+msgstr "❌ Не вдалося розібрати кнопки. Формат: Текст | URL — по одній на рядок. Використовуйте коми для кількох кнопок в одному рядку."
+
+msgid "nl-send-datetime-error"
+msgstr "❌ Невірний формат дати/часу. Очікується: YYYY-MM-DD HH:MM"

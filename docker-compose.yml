@@ -1,0 +1,14 @@
+# Access Manager Bot
+# Requires reachable PostgreSQL and Redis (set host/port via .env).
+
+services:
+  access-manager-bot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: access-manager-bot
+    env_file:
+      - .env
+    ports:
+      - "8080:8080"
+    restart: unless-stopped

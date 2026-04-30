@@ -1,0 +1,86 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: Lint + tests
+    runs-on: ubuntu-latest
+
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_USER: bot
+          POSTGRES_PASSWORD: password
+          POSTGRES_DB: access_manager
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+
+      redis:
+        image: redis:7-alpine
+        ports:
+          - 6379:6379
+        options: >-
+          --health-cmd "redis-cli ping"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+
+    env:
+      BOT_TOKEN: "1234567890:ci_dummy_token_for_tests_only"
+      ADMIN_IDS: "1"
+      POSTGRES_USER: bot
+      POSTGRES_PASSWORD: password
+      POSTGRES_HOST: localhost
+      POSTGRES_PORT: 5432
+      POSTGRES_DB: access_manager
+      REDIS_HOST: localhost
+      REDIS_PORT: 6379
+      REDIS_DB: 0
+      LOG_CHAT_ID: "0"
+      SUPPORT_URL: "https://example.com"
+      DEFAULT_LANG: "en"
+      GRACE_PERIOD_MINUTES: "180"
+      COMPLIANCE_SCAN_TIME: "03:00"
+      GRACE_WATCHER_INTERVAL_MINUTES: "5"
+      HEALTH_PORT: "8080"
+      BROADCAST_RPS_DELAY: "0.05"
+      BROADCAST_MAX_RETRIES: "3"
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up uv
+        uses: astral-sh/setup-uv@v3
+        with:
+          python-version: "3.13"
+          enable-cache: true
+
+      - name: Install dependencies
+        run: uv sync --extra dev
+
+      - name: Lint with ruff
+        continue-on-error: true
+        run: uv run ruff check .
+
+      - name: Compile translations
+        run: uv run pybabel compile -d bot/locales -D messages -f
+
+      - name: Apply migrations
+        run: uv run alembic upgrade head
+
+      - name: Run pytest
+        run: uv run pytest tests/ -v

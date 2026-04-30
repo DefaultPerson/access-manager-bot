@@ -1,0 +1,568 @@
+# English translations for Access Manager Bot
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+
+# Language selection
+msgid "language-selection"
+msgstr "Hello! Choose your language:"
+
+msgid "language-selected"
+msgstr "✅ Language set to: English"
+
+msgid "language-changed"
+msgstr "Language changed to English"
+
+# Bot commands
+msgid "cmd-start-desc"
+msgstr "Start the bot"
+
+msgid "cmd-channels-desc"
+msgstr "Browse available channels"
+
+msgid "cmd-language-desc"
+msgstr "Change language"
+
+# Admin command descriptions
+msgid "cmd-admin-policies-desc"
+msgstr "List all policies"
+
+msgid "cmd-admin-policy-create-desc"
+msgstr "Create a new policy"
+
+msgid "cmd-admin-policy-view-desc"
+msgstr "View policy details"
+
+msgid "cmd-admin-policy-add-required-desc"
+msgstr "Add required channel"
+
+msgid "cmd-admin-policy-add-working-desc"
+msgstr "Add working channel"
+
+msgid "cmd-broadcast-desc"
+msgstr "Send broadcast message"
+
+msgid "cmd-admin-channel-remove-desc"
+msgstr "Remove channel from policy"
+
+msgid "cmd-admin-compliance-scan-desc"
+msgstr "Run compliance check"
+
+# Menu placeholder
+msgid "menu-placeholder"
+msgstr "Choose an action..."
+
+# Main menu
+msgid "menu-welcome"
+msgstr "Welcome to Access Manager Bot!"
+
+msgid "menu-channels"
+msgstr "📋 Channels"
+
+msgid "menu-language"
+msgstr "⚙️ Language"
+
+msgid "menu-support"
+msgstr "💬 Support"
+
+# Channel list
+msgid "channels-title"
+msgstr "<b>List of available channels</b>"
+
+msgid "channels-instructions"
+msgstr "To access the channels, send a join request, then tap \"📋 Reqs\" and subscribe to the required channels.\n\nIf the bot didn't add you automatically, tap \"✅Check\"."
+
+msgid "channels-to-access"
+msgstr "<i>To access:</i> <b>{channel_name}</b>"
+
+msgid "channels-required"
+msgstr "Required channels"
+
+msgid "channels-pagination-prev"
+msgstr "⟵ Prev"
+
+msgid "channels-pagination-next"
+msgstr "Next ⟶"
+
+msgid "channels-check-button"
+msgstr "✅ Check"
+
+msgid "channels-reqs-button"
+msgstr "📋 Reqs"
+
+# Join request
+msgid "join-checking"
+msgstr "Checking your access to {channel_name}..."
+
+msgid "join-approved"
+msgstr "✅ You're in! All requirements satisfied. Welcome to {channel_name}."
+
+msgid "join-denied"
+msgstr "❌ Request denied. Requirements not met."
+
+# Missing channels
+msgid "missing-channels-title"
+msgstr "📋 Missing subscriptions"
+
+msgid "missing-channels-message"
+msgstr "To access <b>{channel_name}</b>, please subscribe to the required channels.\n\nAfter subscribing, tap \"Check\"."
+
+msgid "missing-channels-button"
+msgstr "🔁 Check"
+
+# Grace period
+msgid "grace-started"
+msgstr "⏳ New requirement added"
+
+msgid "grace-message"
+msgstr "⏳ To keep access to <b>{channel_name}</b>, please join the required channels within {grace_minutes} min.\n\nAfter subscribing, tap \"Check\"."
+
+msgid "grace-still-missing"
+msgstr "⚠️ Still missing: {missing_channels}\n\nGrace ends in {grace_remaining}"
+
+msgid "grace-resolved"
+msgstr "✅ Requirements met. Access restored!"
+
+msgid "compliance-restored"
+msgstr "✅ Access to <b>{channel_name}</b> restored! All requirements satisfied."
+
+# Revocation
+msgid "revoked-title"
+msgstr "🚫 Access paused"
+
+msgid "revoked-message"
+msgstr "Access to <b>{channel_name}</b> paused because missing:\n\n {missing_channels}\n\nJoin required channels and retry with /channels"
+
+# Admin commands
+msgid "admin-policy-created"
+msgstr "✅ Policy created for {channel_name}\n\nPolicy ID: <code>{policy_id}</code>\n\nNow add working and required channels with:\n- <code>/policy_working_add {policy_id} <channel_link></code>\n- <code>/policy_required_add {policy_id} <channel_link></code>"
+
+msgid "admin-channel-added"
+msgstr "✅ Channel added\n\nPolicy: {policy_id}\nChannel: {channel_name}\nKind: {kind}"
+
+msgid "admin-channel-removed"
+msgstr "✅ Channel removed"
+
+msgid "admin-policy-list"
+msgstr "📋 <b>Policy list</b>\n\n{policies_list}"
+
+msgid "admin-no-policies"
+msgstr "No policies found"
+
+msgid "admin-bot-no-rights"
+msgstr "❌ Bot lacks admin rights in channel {channel_id}"
+
+msgid "admin-error"
+msgstr "❌ Error: {error}"
+
+# Broadcast
+msgid "broadcast-prompt"
+msgstr "📢 Enter broadcast message:"
+
+msgid "broadcast-queued"
+msgstr "✅ Broadcast queued. You'll receive a summary when delivery finishes."
+
+msgid "broadcast-completed"
+msgstr "✅ Broadcast completed\n\nDelivered: {delivered}\nFailed: {failed}"
+
+# Status
+msgid "status-title"
+msgstr "📊 <b>Your status</b>"
+
+msgid "status-active"
+msgstr "✅ Active"
+
+msgid "status-grace"
+msgstr "⏳ Grace period"
+
+msgid "status-revoked"
+msgstr "🚫 Access paused"
+
+msgid "status-needs-review"
+msgstr "📋 Needs review"
+
+msgid "status-details"
+msgstr "Policy: {policy_name}\nStatus: {status}\nLast checked: {last_checked}"
+
+# Help
+msgid "help-title"
+msgstr "❓ <b>Help</b>"
+
+# Errors
+msgid "error-general"
+msgstr "⚠️ An error occurred. Try again later."
+
+msgid "error-not-found"
+msgstr "❌ Not found"
+
+msgid "error-permission-denied"
+msgstr "❌ Permission denied"
+
+msgid "error-invalid-command"
+msgstr "❌ Invalid command"
+
+# Admin buttons
+msgid "admin-btn-add-required"
+msgstr "➕ Add Required"
+
+msgid "admin-btn-add-working"
+msgstr "➕ Add Working"
+
+msgid "admin-btn-list-channels"
+msgstr "📋 List Channels"
+
+msgid "admin-btn-deactivate"
+msgstr "🗑️ Deactivate"
+
+msgid "admin-btn-back-to-list"
+msgstr "⬅️ Back to List"
+
+msgid "admin-btn-confirm"
+msgstr "✅ Confirm"
+
+msgid "admin-btn-cancel"
+msgstr "❌ Cancel"
+
+msgid "admin-btn-remove-channel"
+msgstr "🗑️ Remove Channel"
+
+msgid "admin-btn-back"
+msgstr "⬅️ Back"
+
+msgid "admin-btn-remove-protected"
+msgstr "🗑️ Remove Protected Channel"
+
+msgid "confirm-button"
+msgstr "🔁 Confirm"
+
+msgid "ok-button"
+msgstr "OK"
+
+# Newsletter/Broadcast system
+msgid "nl-btn-add"
+msgstr "Add"
+
+msgid "nl-btn-delete"
+msgstr "Delete"
+
+msgid "nl-btn-back"
+msgstr "Back"
+
+msgid "nl-btn-skip"
+msgstr "Skip"
+
+msgid "nl-btn-next"
+msgstr "Next"
+
+msgid "nl-btn-later"
+msgstr "Later"
+
+msgid "nl-btn-now"
+msgstr "Now"
+
+msgid "nl-btn-confirm"
+msgstr "Confirm"
+
+msgid "nl-outdated-text"
+msgstr "..."
+
+msgid "nl-newsletters"
+msgstr ""
+"Newsletter menu\n"
+"\n"
+"<b>Add</b> - add/launch a scheduled newsletter\n"
+"\n"
+"• Total users: <b>{total}</b>\n"
+"\n"
+"List of scheduled newsletters:"
+
+msgid "nl-newsletter"
+msgstr ""
+"The message above is an example of a scheduled message.\n"
+"\n"
+"<b>Delete</b> - delete the scheduled message\n"
+"\n"
+"Choose an action:"
+
+msgid "nl-newsletter-delete"
+msgstr "Confirm the deletion of the scheduled message?"
+
+msgid "nl-send-message"
+msgstr "Please send or forward your message:"
+
+msgid "nl-send-buttons"
+msgstr ""
+"Please provide buttons for pinning the message.\n"
+"If you do not wish to pin, press skip.\n"
+"\n"
+"Send button text and link(s) in the format:\n"
+"<code>Button text | link</code>\n"
+"Example:\n"
+"<code>Text | https://example.com</code>\n"
+"\n"
+"To add multiple buttons in a row, separate links with commas.\n"
+"Example:\n"
+"<code>First Text | https://example.com, Second Text | https://example.com</code>\n"
+"\n"
+"To add multiple buttons in a column, write new links on new lines.\n"
+"Example:\n"
+"<code>First Text | https://example.com\n"
+"Second Text | https://example.com</code>"
+
+msgid "nl-send-buttons-error"
+msgstr ""
+"There was an error processing the provided button information. "
+"Please ensure that each button is formatted correctly:\n"
+"<code>Button text | link</code>\n"
+"Example:\n"
+"<code>Text | https://example.com</code>\n"
+"\n"
+"If you encounter issues, check for typos, missing links, or incorrect formatting."
+
+msgid "nl-message-preview"
+msgstr ""
+"The message above is an example of a scheduled message.\n"
+"\n"
+"<b>Next</b> - continue customization\n"
+"\n"
+"Choose an action:"
+
+msgid "nl-choose-options"
+msgstr ""
+"Choose an action:\n"
+"\n"
+"<b>Now</b> - launch the newsletter\n"
+"<b>Later</b> - postpone the newsletter"
+
+msgid "nl-confirmation-now"
+msgstr "Are you sure you want to confirm and run the newsletter?"
+
+msgid "nl-send-datetime"
+msgstr ""
+"Send the date and time for the newsletter launch in the format:\n"
+"<code>YYYY-MM-DD HH:MM</code>\n"
+"Example:\n"
+"<code>{datetime_string}</code>"
+
+msgid "nl-send-datetime-error"
+msgstr ""
+"There was an error processing the provided date and time. "
+"Please ensure that the format is correct:\n"
+"<code>YYYY-MM-DD HH:MM</code>\n"
+"Example:\n"
+"<code>{datetime_string}</code>"
+
+msgid "nl-confirmation-later"
+msgstr "Are you sure you want to confirm and postpone the newsletter?"
+
+msgid "nl-newsletter-started"
+msgstr "The newsletter has been started. Please wait for the completion notification."
+
+msgid "nl-newsletter-ended"
+msgstr ""
+"The newsletter has been successfully completed for a total of {total} users.\n"
+"\n"
+"Successful: <b>{successful}</b> • Unsuccessful: <b>{unsuccessful}</b>"
+
+
+# Admin policy messages
+msgid "admin-btn-reactivate"
+msgstr "✅ Reactivate Policy"
+
+msgid "admin-policies-not-found"
+msgstr "📋 No policies found"
+
+msgid "admin-policies-title"
+msgstr "<b>📋 Access Policies (Last 10)</b>"
+
+msgid "admin-usage-policy-view"
+msgstr "❌ Usage: /admin_policy_view &lt;policy_id&gt;"
+
+msgid "admin-invalid-uuid"
+msgstr "❌ Invalid UUID format"
+
+msgid "admin-policy-not-found"
+msgstr "❌ Policy not found"
+
+msgid "admin-policy-details"
+msgstr "<b>Policy: {title}</b>\n\nID: <code>{id}</code>\nStatus: {status}\nChat ID: <code>{chat_id}</code>"
+
+msgid "admin-status-active"
+msgstr "✅ Active"
+
+msgid "admin-status-inactive"
+msgstr "❌ Inactive"
+
+msgid "admin-enter-chat-id"
+msgstr "📝 Enter the protected chat ID (numeric):"
+
+msgid "admin-invalid-input"
+msgstr "❌ Invalid input"
+
+msgid "admin-chat-id-numeric"
+msgstr "❌ Chat ID must be a number (e.g., -1002931287222)"
+
+msgid "admin-enter-channel-link"
+msgstr "📝 Enter the protected channel link (e.g., https://t.me/+inviteHash or https://t.me/username)\nOr send '-' to skip:"
+
+msgid "admin-enter-title"
+msgstr "📝 Enter the policy title:"
+
+msgid "admin-enter-policy-id"
+msgstr "📝 Enter the policy ID (UUID):"
+
+msgid "admin-usage-reactivate"
+msgstr "❌ Usage: /admin_policy_reactivate &lt;policy_id&gt;"
+
+msgid "admin-enter-channel-chat-id"
+msgstr "📝 Enter the channel chat ID (numeric):"
+
+msgid "admin-enter-channel-link-add"
+msgstr "📝 Enter the channel link (e.g., https://t.me/+inviteHash or https://t.me/username)\nOr send '-' to skip:"
+
+msgid "admin-enter-display-name"
+msgstr "📝 Enter the display name for this channel:"
+
+msgid "admin-working-channels-deprecated"
+msgstr "❌ Adding working channels is no longer supported."
+
+msgid "admin-kind-required"
+msgstr "required"
+
+msgid "admin-kind-working"
+msgstr "working"
+
+msgid "admin-callback-error"
+msgstr "❌ Error"
+
+msgid "admin-invalid-policy-id"
+msgstr "❌ Invalid policy ID"
+
+msgid "admin-no-channels"
+msgstr "No channels in this policy"
+
+msgid "admin-channels-in-policy"
+msgstr "<b>Channels in {title}</b>"
+
+msgid "admin-required-channels"
+msgstr "<b>Required channels:</b>"
+
+msgid "admin-working-channels"
+msgstr "<b>Working channels:</b>"
+
+msgid "admin-label-chat-id"
+msgstr "Chat ID"
+
+msgid "admin-label-revision"
+msgstr "Revision"
+
+msgid "admin-send-skip"
+msgstr "Send '-' to skip"
+
+msgid "admin-policy-deactivated"
+msgstr "✅ Policy deactivated: <b>{title}</b>"
+
+msgid "admin-policy-reactivated"
+msgstr "✅ Policy reactivated: <b>{title}</b>"
+
+msgid "admin-protected-removed"
+msgstr "✅ Protected channel removed from policy <b>{title}</b>. Policy has been deactivated."
+
+msgid "broadcast-system-unavailable"
+msgstr "❌ Newsletter system not available.\nMake sure AiogramNewsletterMiddleware is registered."
+
+msgid "broadcast-no-users"
+msgstr "⚠️ No users found in database"
+
+msgid "admin-remove-cmd"
+msgstr "Remove"
+
+msgid "admin-usage-channel-remove"
+msgstr "❌ Usage: /admin_channel_remove &lt;channel_uuid&gt;"
+
+msgid "admin-btn-edit-link"
+msgstr "🔗 Edit Channel Link"
+
+msgid "admin-enter-new-link"
+msgstr "📝 Enter the new protected channel link.\n\nCurrent link: <code>{current_link}</code>\n\nSend the new link (e.g., https://t.me/+inviteHash or https://t.me/username):"
+
+msgid "join-approved-plain"
+msgstr "✅ You're in! All requirements satisfied. Welcome to {channel_name}."
+
+msgid "missing-channels-message-plain"
+msgstr "To access {channel_name}, please subscribe to the required channels.\n\nAfter subscribing, tap \"Check\"."
+
+msgid "menu-back-button"
+msgstr "⬅️ Back to Menu"
+
+msgid "new-channel-added-notification"
+msgstr "⏳ A new required channel has been added to <b>{policy_name}</b> policy: <b>{channel_name}</b>.\n\nPlease subscribe within {grace_minutes} min to maintain access.\n\nAfter subscribing, tap \"Confirm\"."
+
+msgid "compliant-send-request"
+msgstr "✅ You have fulfilled all the requirements!\n\nNow send an application to join {channel_name}"
+
+# Admin users commands
+msgid "cmd-admin-users-desc"
+msgstr "List all users"
+
+msgid "admin-users-title"
+msgstr "📋 User List"
+
+msgid "admin-users-page-info"
+msgstr "Page {page} of {total_pages} | Total users: {total}"
+
+msgid "admin-users-no-users"
+msgstr "❌ No users found"
+
+# Admin user sync command
+msgid "cmd-admin-user-sync-desc"
+msgstr "Actualize user membership"
+
+msgid "admin-user-sync-usage"
+msgstr "❌ Usage: /admin_user_sync &lt;user_id&gt;"
+
+msgid "admin-user-sync-invalid-id"
+msgstr "❌ Invalid user_id format"
+
+msgid "admin-user-sync-user-not-found"
+msgstr "❌ User not found in database"
+
+msgid "admin-user-sync-progress"
+msgstr "🔄 Actualizing membership for user {user_id}..."
+
+msgid "admin-user-sync-complete"
+msgstr "✅ Sync complete!\n\nChecked channels: {checked}\nErrors: {errors}\nUpdated grants: {updated}\n\n💡 Run /admin_compliance_scan to verify."
+
+# Admin command responses (extracted from hardcoded strings)
+msgid "admin-policy-created-details"
+msgstr "✅ Policy created!\n\nID: <code>{id}</code>\nTitle: <b>{title}</b>\nChat ID: <code>{chat_id}</code>"
+
+msgid "admin-channel-removed-details"
+msgstr "✅ Channel removed!\n\nID: <code>{id}</code>\nName: <b>{name}</b>\nPolicy ID: <code>{policy_id}</code>"
+
+msgid "admin-policy-reactivated-details"
+msgstr "✅ Policy reactivated!\n\nID: <code>{id}</code>\nTitle: <b>{title}</b>"
+
+msgid "admin-channel-link-updated"
+msgstr "✅ Channel link updated!\n\nOld: <code>{old_link}</code>\nNew: <code>{new_link}</code>"
+
+msgid "admin-users-notified-suffix"
+msgstr "\n\n📤 Users notified: {notified}/{affected}"
+
+msgid "admin-compliance-scan-started"
+msgstr "⏳ Running compliance scan..."
+
+msgid "admin-compliance-scan-completed"
+msgstr "✅ Compliance scan completed. See logs for details."
+
+msgid "admin-compliance-scan-failed"
+msgstr "❌ Compliance scan failed: {error}"
+
+msgid "grace-fallback-missing-channels"
+msgstr "missing channels"
+
+msgid "nl-send-buttons-error"
+msgstr "❌ Failed to parse buttons. Format: Text | URL — one per line. Use commas to put multiple buttons in one row."
+
+msgid "nl-send-datetime-error"
+msgstr "❌ Invalid date/time format. Expected: YYYY-MM-DD HH:MM"
